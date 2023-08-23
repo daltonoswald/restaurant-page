@@ -1,7 +1,82 @@
+body {
+    background-color: #d8ccb4;
+}
+
+#content {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.navBtnGroup {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+
+.navBtn {
+    background-color: #d8ccb4;
+    width: 100px;
+    height: 50px;
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 3px;
+}
+
 .title {
-    color: purple;
+    color: rgb(28, 154, 192);
+    font-size: 48px;
+}
+
+.blurbElement {
+    font-size: 24px;
+}
+
+.blurbContainer {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    gap: 8px;
+    padding: 8px 8px 8px 8px;
+}
+
+.dukeImg {
+    height: 20%;
+    width: 20%;
+}
+
+.menuItem {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    align-items: center;
+    text-align: center;
+    border: 4px solid rgb(150, 71, 63);
+    gap: 8px;
+    padding: 8px 8px 8px 8px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.duke {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    align-items: center;
+    text-align: center;
+    border: 4px solid rgb(150, 71, 63);
+    gap: 8px;
+    margin: 8px 8px 8px 8px;
+    padding: 8px 8px 8px 8px;
+}
+
+.phone, .email {
+    margin: 8px 8px 8px 8px;
 }
 
 .pizzaImg {
-    height: 50px;
+    height: 100px;
+    width: 100px;
 }

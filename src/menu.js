@@ -23,6 +23,9 @@ export default function menu() {
     menuBtn.onclick = menu;
     buttons.appendChild(menuBtn);
 
+    menuBtn.style.background = "#605444";
+    menuBtn.style.color = "#fff";
+
     let contactBtn = document.createElement('button');
     contactBtn.classList.add('navBtn');
     contactBtn.textContent = `Contact`;

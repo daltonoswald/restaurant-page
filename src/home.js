@@ -1,5 +1,5 @@
 // import './styles.css';
-import pineapplePizzaImg from './pineapplepizza.png';
+import dukeS from './duke.png';
 import menu from './menu.js';
 import contact from './contact.js';
 export default function home() {
@@ -15,6 +15,9 @@ export default function home() {
     homeBtn.textContent = `Home`;
     homeBtn.onclick = home;
     buttons.appendChild(homeBtn);
+
+    homeBtn.style.background = "#605444";
+    homeBtn.style.color = "#fff";
 
     let menuBtn = document.createElement('button');
     menuBtn.classList.add('navBtn');
@@ -33,14 +36,23 @@ export default function home() {
     titleElement.textContent = `Duke Sucellus Pizza Palace`;
     content.appendChild(titleElement);
 
-    const myPineapplePizza = new Image();
-    myPineapplePizza.src = pineapplePizzaImg;
-    myPineapplePizza.classList.add('pizzaImg');
-    content.appendChild(myPineapplePizza);
+    const dukeIcon = new Image();
+    dukeIcon.src = dukeS;
+    dukeIcon.classList.add('dukeImg');
+    content.appendChild(dukeIcon);
 
-    let blurbElement = document.createElement('div');
-    blurbElement.classList.add('blurbElement');
-    blurbElement.textContent = "Duke Sucellus Pizza Palace is the newest and coolest pizzeria in all of Weiss!"
-    content.appendChild(blurbElement);
+    let blurbContainer = document.createElement('div');
+    blurbContainer.classList.add('blurbContainer');
+    content.appendChild(blurbContainer);
+
+    let intro = document.createElement('p');
+    intro.classList.add('blurbElement');
+    intro.textContent = "Duke Sucellus Pizza Palace is the newest and coolest pizzeria in all of Weiss!";
+    blurbContainer.appendChild(intro);
+
+    let challenge = document.createElement('p');
+    challenge.classList.add('blurbElement');
+    challenge.textContent = "Try our Pizza Party Challenge! 3 Large Pineapple Pizzas, a 2L of Moutain Dew and a 2L of Starry!"
+    blurbContainer.appendChild(challenge);
 
 }

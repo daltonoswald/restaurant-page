@@ -26,6 +26,9 @@ export default function contact() {
     contactBtn.onclick = contact;
     buttons.appendChild(contactBtn);
 
+    contactBtn.style.background = "#605444";
+    contactBtn.style.color = "#fff";
+
     let titleElement = document.createElement('h1');
     titleElement.classList.add('title');
     titleElement.textContent = `Contact`;
